@@ -1,9 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-body { background:#1A1A1A }
-footer { background:#F9F9FB}
+:root{
+    --grey:#7E8597;
+    --wh:#FFFFFF;
+}
 
+body { background:#1A1A1A }
+footer { 
+    background:#F9F9FB;
+}
+
+.center-img {
+    display: block;
+    margin: 0 auto;
+  }
 
 h1 {
     font-family: 'DM Sans';
@@ -24,7 +35,7 @@ h1 {
 
     /* Text/Body */
 
-    color: #7E8597;
+    color: var(--grey);
 }
 
 .chat{
@@ -36,7 +47,7 @@ h1 {
     padding: 0px;
     gap: 48px;
     border-radius: 100px;
-    background:#7E8597;
+    background:var(--grey);
 
     font-family: 'DM Sans';
     font-style: normal;
@@ -47,7 +58,7 @@ h1 {
 
     /* Text/Headlines */
 
-    color: #FFFFFF;
+    color: var(--wh);
 
 
     /* Inside auto layout */
@@ -57,7 +68,8 @@ h1 {
     flex-grow: 0;
 }
 .button{
-    display: flex;
+    margin: 0 auto;
+    display: block;
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -74,7 +86,8 @@ h1 {
     font-size: 14px;
     line-height: 18px;
     text-align: center;
-    color: #FFFFFF;
+    color: var(--wh);
+
 }
 
 .red{
@@ -113,7 +126,7 @@ h1 {
 
     /* Text/Headlines */
 
-    color: #FFFFFF;
+    color: var(--wh);
 }
 
 .why{
@@ -127,7 +140,7 @@ h1 {
 
     /* Text/Headlines */
 
-    color: #FFFFFF;
+    color: var(--wh);
 }
 
 .lets{
@@ -137,6 +150,7 @@ h1 {
     font-size: 32px;
     line-height: 42px;
     /* identical to box height */
+    
 
 
     color: #1A1A1A;
@@ -151,7 +165,7 @@ h1 {
 
     /* Text/Headlines */
 
-    color: #FFFFFF;
+    color: var(--wh);
 }
 
 .textwhy{
@@ -163,7 +177,7 @@ h1 {
 
     /* Text/Headlines */
 
-    color: #FFFFFF;
+    color: var(--wh);
 }
 
 .un{
@@ -176,7 +190,7 @@ h1 {
     text-align: center;
     /* Text/Body */
 
-    color: #7E8597;
+    color: var(--grey);
 }
 
 .st{
@@ -185,6 +199,8 @@ h1 {
     align-items: flex-start;
     padding: 5px 14px;
     gap: 10px;
+
+    list-style: none;
     
     /* Highlight */
    
@@ -197,11 +213,15 @@ h1 {
     font-weight: 500;
     font-size: 14px;
     line-height: 18px;
-    text-align: center;
 
-    color: #FFFFFF;
+    text-align: center;
+    color: var(--wh);
 
     
+}
+
+ul{
+    list-style: none;
 }
 
 .textst{
@@ -211,7 +231,23 @@ h1 {
     font-size: 18px;
     line-height: 23px;
     text-align: center;
-    color: #7E8597;
+    color: var(--grey);
+}
+
+.dn{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+
+    /* Text/Headlines */
+
+    color:var(--wh) ;
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
 }
 
 .footerr{
@@ -220,7 +256,7 @@ h1 {
     font-weight: 400;
     font-size: 12px;
     line-height: 180%;
-
+    
     /* or 22px */
 
 
@@ -229,14 +265,21 @@ h1 {
 
 .logos1{
     float: right;
+    display: block;
 }
 .logos2{
     float: right;width: 10%;
+    display: block;
+
 }
 .logos3{
     float: right;
+    display: block;
+
 }
 .logos4{
     float: right;width: 10%;
+    display:block;
+
     
 }
