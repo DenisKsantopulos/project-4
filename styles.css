@@ -1,6 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
 :root{
     --grey:#7E8597;
     --wh:#FFFFFF;
@@ -10,22 +17,39 @@
 body { background:#1A1A1A }
 footer { 
     background:#F9F9FB;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
 }
+
+.hyp{
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
 
 .center-img {
     display: block;
     margin: 0 auto;
+    margin-top: 5rem;
+
   }
 
 h1 {
     font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 3.2rem;
+    line-height: 4.2rem;
     color: rgb(69, 165, 42);
     text-align: center;
+    margin-top: 6rem;
+    
 }
 
 .text{
     
-
+    padding-left: 2rem;
+    padding-right: 2rem;
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: 400;
@@ -38,6 +62,7 @@ h1 {
 
     color: var(--grey);
 }
+
 
 .chat{
     float: right;
@@ -57,6 +82,8 @@ h1 {
     line-height: 1.8rem;
     text-align: center;
 
+    margin-top: 1rem;
+    margin-right: 1rem;
     /* Text/Headlines */
 
     color: var(--wh);
@@ -69,7 +96,9 @@ h1 {
     flex-grow: 0;
 }
 .button{
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3rem;
     display: block;
     flex-direction: row;
     justify-content: center;
@@ -90,7 +119,29 @@ h1 {
     color: var(--wh);
 
 }
+.l1{
+    
+    margin-left: 3rem;
+    margin-bottom: 1rem;
+}
+.l2{
+    float: right;
+    margin-right: 4rem;
+    margin-bottom: 1rem;
+}
+.l3{
+    
+    margin-left: 3rem;
+    margin-bottom: 7rem;
 
+}
+.l4{
+    float: right;
+    margin-right: 3rem;
+    margin-top: 0.4rem;
+    margin-bottom: 7rem;
+
+}
 .red{
     
     font-family: 'DM Sans';
@@ -109,11 +160,20 @@ h1 {
     color: #FA0369;
 }
 
+.liblock{
+    border-radius: 2rem;
+    max-width: 327.76px;
+    height: 262px;
+    background-color:#2e2a2a;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+}
 .st1{
     display: block;
     margin-left: auto;
     margin-right: auto;
-
+    padding-top: 60px;
 }
 
 .h2{
@@ -128,6 +188,37 @@ h1 {
     /* Text/Headlines */
 
     color: var(--wh);
+
+    
+}
+
+.n1{
+    margin-top: 10rem;
+}
+
+.n2{
+    padding-left: 2rem;
+}
+
+.b1{
+    margin-bottom: 12rem;
+}
+
+.s1{
+    background-color: white;
+    padding-top: 5rem;
+    padding-bottom: 8rem;
+}
+
+.dv{
+    
+    border-radius: 2rem;
+    max-width: 328px;
+    height: 545px;
+    background-color:#141A25;
+    margin-left: auto;
+    margin-right: auto;
+    
 }
 
 .why{
@@ -137,7 +228,7 @@ h1 {
     font-size: 3.2rem;
     line-height: 4.2rem;
     /* identical to box height */
-
+    padding-top: 7rem;
 
     /* Text/Headlines */
 
@@ -175,6 +266,8 @@ h1 {
     font-weight: 400;
     font-size: 1.6rem;
     line-height: 2.1rem;
+    padding-left: 2rem;
+    padding-bottom: 2rem;
 
     /* Text/Headlines */
 
@@ -195,15 +288,12 @@ h1 {
 }
 
 .st{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
     padding: 0.5rem 1.4rem;
-    gap: 1rem;
 
-    list-style: none;
     
+    /*padding-right: 10rem;
     /* Highlight */
+    
    
 
     background: #FA0369;
@@ -217,6 +307,8 @@ h1 {
 
     text-align: center;
     color: var(--wh);
+    width: max-content;
+    margin-inline: auto;
 
     
 }
@@ -235,6 +327,11 @@ ul{
     color: var(--grey);
 }
 
+.li2{
+    display: inline-block;
+    margin-right: 2rem;
+}
+
 .dn{
     font-family: 'DM Sans';
     font-style: normal;
@@ -251,12 +348,21 @@ ul{
     flex-grow: 0;
 }
 
+.ll{
+    margin-bottom: 2rem;
+}
+
+
+
 .footerr{
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
     font-size: 1.2rem;
     line-height: 180%;
+    margin-top: 0;
+    padding-left: 2rem;
+    
     
     /* or 22px */
 
