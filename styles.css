@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 html {
     box-sizing: border-box;
@@ -19,6 +20,20 @@ footer {
     background:#F9F9FB;
     padding-top: 3rem;
     padding-bottom: 3rem;
+}
+
+:focus{
+    background-color:coral;
+}
+
+p::selection{
+    background:blueviolet;
+}
+h2::selection{
+    background:blueviolet;
+}
+h3::selection{
+    background:blueviolet;
 }
 
 .gradient{
@@ -99,12 +114,8 @@ h1 {
 
     margin-top: 1rem;
     margin-right: 1rem;
-    /* Text/Headlines */
 
     color: var(--wh);
-
-
-    /* Inside auto layout */
 
     flex: none;
     order: 0;
@@ -123,8 +134,7 @@ h1 {
 
     background: #FA0369;
     border-radius: 10rem;
-    
-    /* Button Text */
+
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: 500;
@@ -135,11 +145,15 @@ h1 {
 
     box-shadow: 3px 3px 5px #FA0369;
 
+    transition-duration: 0.5s;
+    transition-property: all;
+
 }
 .button:hover{
     background: linear-gradient(45deg,#0250c5,#d43f8d);
     box-shadow: 1px 1px 2px blueviolet;
-    color:honeydew
+    color:honeydew;
+    transform: scale(1.1);
 }
 
 .con{
@@ -153,30 +167,6 @@ h1 {
     margin-left: 1rem;
     margin-right: 1rem;
 }
-/* .l1{
-
-    margin-left: 3rem;
-    margin-bottom: 1rem;
-}
-.l2{
-    float: right;
-    margin-right: 4rem;
-    margin-bottom: 1rem; 
-}
-.l3{
-    
-    margin-left: 3rem;
-    margin-bottom: 7rem;
-
-}
-.l4{
-    float: right;
-    margin-right: 3rem;
-    margin-top: 0.4rem;
-    margin-bottom: 7rem;
-
-} */
-
 
 .red{
     
@@ -185,13 +175,11 @@ h1 {
     font-weight: 500;
     font-size: 1.6rem;
     line-height: 2.1rem;
-    /* identical to box height */
 
     text-align: center;
     letter-spacing: 0.04rem;
     text-transform: uppercase;
 
-    /* Highlight */
 
     color: #FA0369;
 }
@@ -206,28 +194,14 @@ h1 {
     margin-left: auto;
     margin-right: auto; 
     margin-bottom: 2rem;
-   /*  margin:0; */
     padding: 0;
     
 }
-/* .wrappe {
-    max-width: 1170px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 16px;
-    padding-right: 16px;
-  } */
 
 .row{
     display: flex;
     flex-wrap: wrap;
 }
-
-/* .column{
-    flex:1;
-    margin-left: 0.75;
-    margin-right: 0.75;
-} */
 
 .st1{
     display: block;
@@ -244,8 +218,6 @@ h1 {
     font-size: 3.2rem;
     line-height: 4.2rem;
     text-align: center;
-
-    /* Text/Headlines */
 
     color: var(--wh);
 
@@ -287,10 +259,8 @@ h1 {
     font-weight: 500;
     font-size: 3.2rem;
     line-height: 4.2rem;
-    /* identical to box height */
-    padding-top: 7rem;
 
-    /* Text/Headlines */
+    padding-top: 7rem;
 
     color: var(--wh);
 }
@@ -301,10 +271,7 @@ h1 {
     font-weight: 500;
     font-size: 3.2rem;
     line-height: 4.2rem;
-    /* identical to box height */
     
-
-
     color: #1A1A1A;
 }
 
@@ -314,8 +281,6 @@ h1 {
     font-weight: 500;
     font-size: 2.4rem;
     line-height: 3.1rem;
-
-    /* Text/Headlines */
 
     color: var(--wh);
 }
@@ -329,8 +294,6 @@ h1 {
     padding-left: 2rem;
     padding-bottom: 2rem;
 
-    /* Text/Headlines */
-
     color: var(--wh);
 }
 
@@ -342,7 +305,6 @@ h1 {
     font-size: 1.2rem;
     line-height: 1.6rem;
     text-align: center;
-    /* Text/Body */
 
     color: var(--grey);
 
@@ -351,12 +313,6 @@ h1 {
 
 .st{
     padding: 0.5rem 1.4rem;
-
-    
-    /*padding-right: 10rem;
-    /* Highlight */
-    
-   
 
     background: #FA0369;
     border-radius: 6.3rem;
@@ -402,8 +358,6 @@ ul{
     font-size: 1.8rem;
     line-height: 2.3rem;
 
-    /* Text/Headlines */
-
     color:var(--wh) ;
 
     flex: none;
@@ -427,10 +381,6 @@ ul{
     line-height: 180%;
     margin-top: 0;
     padding-left: 2rem;
-    
-    
-    /* or 22px */
-
 
     color: rgba(26, 26, 26, 0.56);
 }
@@ -514,13 +464,12 @@ ul{
     margin-right: 2rem;
 }
 
-.ll1{
-
-}
 .girl{
     width: 327px;
     height: 386.19px;
 }
+
+
 
 @media screen and (min-width:1200px) {
     h1{
